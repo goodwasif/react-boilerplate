@@ -9,8 +9,7 @@ import {
 // TODO: check how to use lazy with router 6.4
 import Home from "features/misc/pages/Home";
 import About from "features/misc/pages/About";
-// const Home = lazy(() => import("features/misc/pages/Home"));
-// const About = lazy(() => import("features/misc/pages/About"));
+import Wagmi from "components/examples/wagmi";
 
 function Root() {
   return (
@@ -62,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "wagmi",
+        element: <Wagmi />,
       },
     ],
   },

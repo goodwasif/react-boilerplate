@@ -1,4 +1,4 @@
-import React from "react";
+import { Head } from "components/Head";
 import { Link } from "react-router-dom";
 
 type LayoutProps = {
@@ -9,7 +9,7 @@ type LayoutProps = {
 export const Layout = ({ children, title }: LayoutProps) => {
   return (
     <>
-      {/* <Head title={title} /> */}
+      <Head title={title} />
       <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <div className="flex justify-center">

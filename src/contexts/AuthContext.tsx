@@ -11,7 +11,7 @@ import { type AuthUser } from "features/auth";
 // import { AxiosError } from "axios";
 
 // TODO: improve types
-interface AuthContextValue {
+export interface AuthContextValue {
   user: AuthUser | null | undefined;
   authStatus: QueryStatus;
   error: unknown;
