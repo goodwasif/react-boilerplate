@@ -1,2 +1,5 @@
 node_modules
-_site
+build
+public
+package-lock.json
+yarn.lock
